@@ -23,6 +23,17 @@
         android:onClick="anim"
         app:srcCompat="@drawable/path_anim" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="anim_five"
+        app:srcCompat="@drawable/fivestar_anim" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_btn"/>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
