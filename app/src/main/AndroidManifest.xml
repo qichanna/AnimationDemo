@@ -17,7 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".BerzierActivity">
-
+        </activity>
+        <activity android:name=".MorphingBerzierActivity">
+        </activity>
+        <activity android:name=".PadBerzierActivity">
         </activity>
     </application>
 

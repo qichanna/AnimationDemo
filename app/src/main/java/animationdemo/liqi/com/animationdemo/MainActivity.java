@@ -35,6 +35,16 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void toMorphingActivity(View view){
+        Intent i = new Intent(this,MorphingBerzierActivity.class);
+        startActivity(i);
+    }
+
+    public void toPadActivity(View view){
+        Intent i = new Intent(this,PadBerzierActivity.class);
+        startActivity(i);
+    }
+
     public void anim_five(View view){
         ImageView imageView = (ImageView) view;
         AnimatedVectorDrawable drawable = (AnimatedVectorDrawable) getDrawable(R.drawable.fivestar_anim);
