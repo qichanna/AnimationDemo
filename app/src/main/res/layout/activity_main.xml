@@ -56,6 +56,12 @@
             android:text="平滑连接贝塞尔曲线"
             android:onClick="toPadActivity"/>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运动波浪"
+            android:onClick="toWaveActivity"/>
+
     </LinearLayout>
 </ScrollView>
 

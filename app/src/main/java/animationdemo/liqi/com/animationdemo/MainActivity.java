@@ -53,4 +53,9 @@ public class MainActivity extends AppCompatActivity {
             drawable.start();
         }
     }
+
+    public void toWaveActivity(View view){
+        Intent i = new Intent(this,WaveBerzierActivity.class);
+        startActivity(i);
+    }
 }
