@@ -69,6 +69,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void topathpaintActivity(View view){
+        Intent i = new Intent(this,PathPaintActivity.class);
+        startActivity(i);
+    }
+
     public void topostanActivity(View view){
         Intent i = new Intent(this,PathPosTanActivity.class);
         startActivity(i);
