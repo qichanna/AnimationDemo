@@ -17,7 +17,7 @@ import android.view.animation.LinearInterpolator;
  * Created by liqi on 2017/4/16.
  */
 
-public class PathPaintView extends View {
+public class PathPaintView extends View implements View.OnClickListener{
 
     private Path mPath;
     private Paint mPaint;
@@ -25,6 +25,7 @@ public class PathPaintView extends View {
     private float mAnimValue;
     private PathEffect mEffect;
     private PathMeasure mPathMeasure;
+    private ValueAnimator animator;
 
     public PathPaintView(Context context) {
         super(context);
@@ -48,7 +49,7 @@ public class PathPaintView extends View {
 
         mLength = mPathMeasure.getLength();
 
-        ValueAnimator animator = ValueAnimator.ofFloat(1,0);
+        animator = ValueAnimator.ofFloat(1,0);
         animator.setDuration(2000);
         animator.setInterpolator(new LinearInterpolator());
         animator.setRepeatCount(ValueAnimator.INFINITE);
@@ -62,7 +63,9 @@ public class PathPaintView extends View {
                 invalidate();
             }
         });
-        animator.start();
+
+        setOnClickListener(this);
+
     }
 
     public PathPaintView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
@@ -73,5 +76,10 @@ public class PathPaintView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         canvas.drawPath(mPath,mPaint);
+    }
+
+    @Override
+    public void onClick(View v) {
+        animator.start();
     }
 }
