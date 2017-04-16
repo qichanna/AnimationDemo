@@ -26,6 +26,10 @@
         </activity>
         <activity android:name=".PathBerzierActivity">
         </activity>
+        <activity android:name=".LoadingActivity">
+        </activity>
+        <activity android:name=".PathPosTanActivity">
+        </activity>
     </application>
 
 </manifest>

@@ -63,4 +63,14 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this,PathBerzierActivity.class);
         startActivity(i);
     }
+
+    public void toLoadingActivity(View view){
+        Intent i = new Intent(this,LoadingActivity.class);
+        startActivity(i);
+    }
+
+    public void topostanActivity(View view){
+        Intent i = new Intent(this,PathPosTanActivity.class);
+        startActivity(i);
+    }
 }

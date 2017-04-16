@@ -68,6 +68,18 @@
             android:text="购物车"
             android:onClick="toPathActivity"/>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="loading"
+            android:onClick="toLoadingActivity"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="切线"
+            android:onClick="topostanActivity"/>
+
     </LinearLayout>
 </ScrollView>
 
