@@ -24,6 +24,8 @@
         </activity>
         <activity android:name=".WaveBerzierActivity">
         </activity>
+        <activity android:name=".PathBerzierActivity">
+        </activity>
     </application>
 
 </manifest>
